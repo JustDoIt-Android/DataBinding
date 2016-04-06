@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <data>
+        <variable
+            name="user"
+            type="com.itheima.databinderdemo.model.ObservableUser"></variable>
+    </data>
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{user.name}"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{user.beautiful}"
+            />
+
+        <TextView
+            android:id="@+id/tv_observable_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="带ID的textview"
+            />
+
+        <Button
+            android:onClick="clickToChange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击切换内容"
+            />
+        <Button
+            android:onClick="clickToIDText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击切换带IDTextView的内容"
+            />
+    </LinearLayout>
+</layout>

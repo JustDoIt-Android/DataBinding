@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/bt_mainact_basic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="15sp"
+        android:padding="5dp"
+        android:text="Activity中的应用" />
+    <Button
+        android:id="@+id/bt_mainact_resource"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="15sp"
+        android:padding="5dp"
+        android:text="资源中的应用" />
+    <Button
+        android:id="@+id/bt_mainact_observable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="15sp"
+        android:padding="5dp"
+        android:text="切换Model内容" />
+    <Button
+        android:id="@+id/bt_mainact_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="15sp"
+        android:padding="5dp"
+        android:text="Recycler多条目刷新" />
+</LinearLayout>
